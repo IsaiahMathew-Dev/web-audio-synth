@@ -1,0 +1,182 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Synth Container */
+
+.synth-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Oscillator Selector */
+
+.oscillator-selector {
+  margin-bottom: 20px;
+}
+
+.oscillator-selector label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.oscillator-selector select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Frequency Slider */
+
+.frequency-slider {
+  margin-bottom: 20px;
+}
+
+.frequency-slider label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.frequency-slider input[type="range"] {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.frequency-slider input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.frequency-slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.frequency-slider span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Distortion Control */
+
+.distortion-control {
+  margin-bottom: 20px;
+}
+
+.distortion-control label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.distortion-control input[type="range"] {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.distortion-control input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.distortion-control input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.distortion-control span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Play Button */
+
+.play-button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #444;
+}
+
+.play-button:active {
+  background-color: #333;
+}
+```
+
+Note: This CSS code assumes that the HTML structure is as follows:
+
+```html
+<div class="synth-container">
+  <div class="oscillator-selector">
+    <label>Oscillator:</label>
+    <select id="oscillator-id">
+      <option value="sine">Sine</option>
+      <option value="square">Square</option>
+      <option value="sawtooth">Sawtooth</option>
+    </select>
+  </div>
+  <div class="frequency-slider">
+    <label>Frequency:</label>
+    <input type="range" id="frequency-id" min="20" max="20000" value="200">
+    <span>200 Hz</span>
+  </div>
+  <div class="distortion-control">
+    <label>Distortion:</label>
+    <input type="range" id="distortion-id" min="0" max="1" value="0.5">
+    <span>0.5</span>
+  </div>
+  <button class="play-button">Play</button>
+</div>
+```
+
+Make sure to adjust the CSS selectors and styles according to your actual HTML structure.
